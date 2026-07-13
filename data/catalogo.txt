@@ -1,0 +1,62 @@
+CATALOGO DE PRODUCTOS Y SERVICIOS - TECHSOLUCIONES MX
+
+FIREWALL Y SEGURIDAD DE RED
+
+Fortinet FortiGate 60F
+- Descripcion: Firewall de siguiente generacion para empresas de hasta 60 usuarios
+- Precio mensual (servicio administrado): $8,500 MXN
+- Incluye: Licencia UTM, soporte 24/7, monitoreo NOC
+- Ideal para: PyMEs, sucursales corporativas
+- Tiempo de instalacion: 5 dias habiles
+
+Fortinet FortiGate 100F
+- Descripcion: Firewall para empresas de 60 a 200 usuarios
+- Precio mensual (servicio administrado): $15,000 MXN
+- Incluye: Licencia UTM, IPS, antivirus, soporte 24/7
+- Ideal para: Empresas medianas, corporativos con sucursales
+- Tiempo de instalacion: 7 dias habiles
+
+CONECTIVIDAD
+
+Enlace de Fibra Dedicada 100MB
+- Descripcion: Internet dedicado simetrico con SLA garantizado
+- Precio mensual: $6,500 MXN
+- SLA: 99.9% de disponibilidad
+- Tiempo de instalacion: 15 dias habiles
+
+Enlace de Fibra Dedicada 500MB
+- Descripcion: Internet dedicado de alta capacidad para empresas con alto consumo
+- Precio mensual: $12,000 MXN
+- SLA: 99.9% de disponibilidad
+- Tiempo de instalacion: 15 dias habiles
+
+SD-WAN ADMINISTRADO
+
+SD-WAN Cisco Meraki - Plan Basico
+- Descripcion: Red definida por software para hasta 5 sucursales
+- Precio mensual: $18,000 MXN
+- Incluye: Equipos, instalacion, monitoreo centralizado, soporte
+- Ideal para: Empresas con sucursales que buscan visibilidad de red
+
+SD-WAN Cisco Meraki - Plan Empresarial
+- Descripcion: Red definida por software para hasta 20 sucursales
+- Precio mensual: $45,000 MXN
+- Incluye: Equipos, instalacion, monitoreo 24/7, reportes mensuales
+- Ideal para: Corporativos con presencia nacional
+
+POLITICAS COMERCIALES
+
+- Contratos minimos de 12 meses
+- Descuento del 10% en contratos de 24 meses
+- Descuento del 15% en contratos de 36 meses
+- Instalacion sin costo en contratos mayores a $20,000 MXN mensuales
+- Soporte tecnico incluido en todos los servicios administrados
+
+FIREWALL Y SEGURIDAD ADMINISTRADA
+
+Fortinet FortiGate 60F - Servicio Administrado
+- Descripcion: Firewall de siguiente generacion para empresas de hasta 80 usuarios
+- Precio mensual: $8,500 MXN
+- Incluye: Licencia UTM, antivirus, IPS, monitoreo NOC 24/7, reportes mensuales
+- Ideal para: PyMEs sin TI interno, despachos contables, firmas legales
+- Tiempo de instalacion: 5 dias habiles
