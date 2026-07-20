@@ -56,11 +56,20 @@ class VentanaJarvis(QMainWindow):
         self.campo_texto.clear()
 
         self.historial.append({"role":"user", "content":mensaje})
-        respuesta = enviar_mensaje(self.historial)
+        self.area_chat.append(f"Jarvis:")
+        respuesta = enviar_mensaje(self.historial, self.agregar_fragmento)
         self.historial.append({"role": "assistant","content":respuesta})
-
+       
         guardar_historial(self.historial)
-        self.area_chat.append(f"Jarvis: {respuesta}\n")
+        self.area_chat.append("\n")
+    
+
+    def agregar_fragmento(self, texto):
+        cursor = self.area_chat.textCursor()
+        cursor.movePosition(cursor.MoveOperation.End)
+        self.area_chat.setTextCursor(cursor)
+        self.area_chat.insertPlainText(texto)
+        
   
 
     def limpiar(self): 
@@ -68,5 +77,6 @@ class VentanaJarvis(QMainWindow):
         guardar_historial(self.historial)
         self.area_chat.clear()
         self.area_chat.append("Nueva conversación iniciada.\n")    
+
 
 

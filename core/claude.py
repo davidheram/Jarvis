@@ -7,7 +7,7 @@ load_dotenv()
 
 client = anthropic.Anthropic(api_key="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")
 
-def enviar_mensaje(historial): 
+def enviar_mensaje(historial, callback): 
     ultima_pregunta = historial[-1]["content"]
     contexto = buscar_contexto(ultima_pregunta)
 
@@ -25,12 +25,15 @@ Usa esta informacion del catalogo para responder:
 {contexto}
 
 Si la informacion no esta en el catalogo, dilo claramente."""
-    respuesta = client.messages.create(
+    respuesta_completa = ""
+    with client.messages.stream(
         model="claude-sonnet-4-6",
         max_tokens=1024,
         system= system_prompt,
         messages=historial
+    ) as stream:
+        for texto in stream.text_stream:
+            respuesta_completa += texto 
+            callback(texto) 
 
-    )
-
-    return respuesta.content[0].text
+    return respuesta_completa
