@@ -11,7 +11,7 @@ def enviar_mensaje(historial, callback):
     ultima_pregunta = historial[-1]["content"]
     contexto = buscar_contexto(ultima_pregunta)
 
-    system_prompt = f"""Eres Jarvis, un copiloto de ventas consultivas para una empresa de TI llamada TechSoluciones MX.
+    system_prompt = f"""Eres TechPilot, un copiloto de ventas consultivas para una empresa de TI llamada TechSoluciones MX.
 
 Tu objetivo es ayudar al ejecutivo de cuentas durante el proceso de venta consultiva.
 

@@ -1,4 +1,4 @@
-# Jarvis - Copiloto de Ventas Consultivas con IA
+# TechPilot - Copiloto de Ventas Consultivas con IA
 
 Asistente de escritorio inteligente diseñado para apoyar a ejecutivos de cuentas durante el proceso de venta consultiva de tecnología. Construido con Python, Claude API y RAG.
 

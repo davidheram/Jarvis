@@ -3,7 +3,7 @@ from PyQt6.QtCore import Qt
 from core.claude import enviar_mensaje
 from core.memoria import cargar_historial, guardar_historial
 
-class VentanaJarvis(QMainWindow): 
+class VentanaTechPilot(QMainWindow): 
     def __init__(self):
         super().__init__()
         self.historial = cargar_historial()
@@ -11,7 +11,7 @@ class VentanaJarvis(QMainWindow):
         self.mostrar_historial_previo()
 
     def iniciar_ui(self):
-        self.setWindowTitle("Jarvis")
+        self.setWindowTitle("TechPilot")
         self.setMinimumSize(800, 600)
 
         widget_central = QWidget()
@@ -42,7 +42,7 @@ class VentanaJarvis(QMainWindow):
         if self.historial:
             self.area_chat.append("--- Conversacion anterior ---\n")
             for mensaje in self.historial:
-                rol = "Tu" if mensaje["role"] == "user" else "Jarvis"
+                rol = "Tu" if mensaje["role"] == "user" else "TechPilot"
                 contenido = mensaje["content"].replace("\n", " ")
                 self.area_chat.append(f"{rol}: {contenido}\n")
             self.area_chat.append("--- Nueva sesion ---\n")
@@ -56,7 +56,7 @@ class VentanaJarvis(QMainWindow):
         self.campo_texto.clear()
 
         self.historial.append({"role":"user", "content":mensaje})
-        self.area_chat.append(f"Jarvis:")
+        self.area_chat.append(f"TechPilot:")
         respuesta = enviar_mensaje(self.historial, self.agregar_fragmento)
         self.historial.append({"role": "assistant","content":respuesta})
        
